@@ -10,11 +10,13 @@
     <thead>
     <tr class="sortable ">
       <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-      <th st-sort="firstName">First Name</th>
-      <th st-sort="lastName">Last Name</th>
-      <th st-sort="username">Username</th>
-      <th st-sort="email">Email</th>
-      <th st-sort="age">Age</th>
+      <th st-sort="id">id</th>
+      <th st-sort="type">type</th>
+      <th st-sort="x">x</th>
+      <th st-sort="y">y</th>
+      <th st-sort="z">z</th>
+      <th st-sort="quality">quality</th>
+      <th st-sort="superFrameNumber">superFrameNumber</th>
     </tr>
     <tr>
       <th></th>
@@ -33,11 +35,15 @@
     <tbody>
     <tr ng-repeat="item in smartTableData">
       <td class="table-id">{{item.id}}</td>
-      <td>{{item.firstName}}</td>
-      <td>{{item.lastName}}</td>
-      <td>{{item.username}}</td>
-      <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
-      <td>{{item.age}}</td>
+      <td>{{item.id}}</td>
+      <td>{{item.type}}</td>
+      <td>{{item.x}}</td>
+      <td>{{item.y}}</td>
+      <td>{{item.z}}</td>
+      <td>{{item.quality}}</td>
+      <td>{{item.superFrameNumber}}</td>
+<!--      <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>-->
+<!--      <td>{{item.age}}</td>-->
     </tr>
     </tbody>
     <tfoot>
